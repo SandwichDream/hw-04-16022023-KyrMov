@@ -5,6 +5,11 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #1C52DD8F;
 }
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 header,main{
     width: 1800px;
     margin: 0 auto;
@@ -18,6 +23,8 @@ header,main{
     display: inline-block;
     width: 52px;
     height: 52px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     background: linear-gradient(90deg, #345AA4 10%, #3F009C 100%);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     position: relative;
